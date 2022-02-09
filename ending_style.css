@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #E48927;
+    text-align: center;
+}
+
+.comment {
+    margin: 12.5vh 0px 3.2813vh 0px;
+    font-family: 'SF_HambakSnow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+    color: white;
+}
+
+.endingLogo {
+    width: 72.2222vw;
+    height: 34.5313vh;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 4.7222vw;
+}
+
+button {
+    width: 52.2222vw;
+    height: 8.5938vh;
+    display: block;
+    margin: 2.3438vh auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 35vw;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+@media screen and (max-width:359px) {
+    html, body {
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:319px) {
+    html, body {
+        font-size: 50%;
+    }
+}
+
+/* px단위 버전 */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #E48927;
+    text-align: center;
+}
+
+.comment {
+    margin: 80px 0px 21px 0px;
+    font-family: 'SF_HambakSnow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
+
+.endingLogo {
+    width: 260px;
+    height: 221px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 17px;
+}
+
+button {
+    width: 188px;
+    height: 55px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+} */

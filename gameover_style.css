@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #2B2823;
+    text-align: center;
+}
+
+.comment {
+    margin: 14.0625vh 0px 2.5vh 0px;
+    font-family: 'SF_HambakSnow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6rem;
+    color: white;
+}
+
+.cat_meme {
+    width: 71.6667vw;
+    height: 32.9688vh;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #E48927;
+    margin: 2.6563vh 0 2.6563vh 0;
+}
+
+button {
+    width: 52.2222vw;
+    height: 8.5938vh;
+    display: block;
+    margin: 2.3438vh auto;
+    border: 1px solid #E48927;
+    border-radius: 35vw;
+    background-color: transparent;
+    color: #E48927;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+@media screen and (min-width:380px) {
+    html, body {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width:359px) {
+    html, body {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    html, body {
+        font-size: 40%;
+    }
+}
+
+/* px단위 버전 */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #2B2823;
+    text-align: center;
+}
+
+.comment {
+    margin: 90px 0px 16px 0px;
+    font-family: 'SF_HambakSnow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+}
+
+.cat_meme {
+    width: 258px;
+    height: 211px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #E48927;
+    margin: 17px;
+}
+
+button {
+    width: 188px;
+    height: 55px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #E48927;
+    border-radius: 35px;
+    background-color: transparent;
+    color: #E48927;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+} */

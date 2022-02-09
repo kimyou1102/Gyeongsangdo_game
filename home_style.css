@@ -1,0 +1,234 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+section {
+    height: 95.6875vh;
+    background: no-repeat url('image/schoolBackgound.png') center/cover;
+}
+
+body {
+    text-align: center;
+}
+
+/* body {
+    height: 94%;
+    width: 100vw;
+    background: no-repeat url('image/schoolBackgound.png') center/cover;
+    text-align: center;
+} */
+
+.layer {
+    height: 95.6875vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+body * {
+    position: relative;
+} */
+
+.test_name {
+    display: inline-block;
+    margin-top: 6.7188vh;
+    margin-bottom: 1.7188vh;
+    color: #207D60;
+    font-size: 1.6rem;
+}
+
+.title_img {
+    width: 75vw;
+    height: 34.45vw;
+    margin: 0 auto;
+    margin-bottom: 6.4063vh;
+    display: block;
+}
+
+.meme_img {
+    display: block;
+    margin: 0 auto;
+    width: 74.4444vw;
+    height: 23.4375vh;
+    margin-bottom: 8.1250vh;
+}
+
+.startBtn {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #E48927;
+    width: 66.6667vw;
+    height: 10.9375vh;
+    border: 1px solid #E48927;
+    box-sizing: border-box;
+    border-radius: 35vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.infoText {
+    margin: 21px 0 0px 0;
+    padding-bottom: 44px;
+    color: #E48927;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.infoText .total, .infoText .survivor {
+    color: #E48927;
+    font-weight: bold;
+}
+
+.gameResult {
+    width: 100%;
+    bottom: 0;
+}
+
+.rank_wrap {
+    position: relative;
+}
+
+.rankingDecoration {
+    width: 23.8889vw;
+    height: 28.08vw;
+    position: absolute;
+    top: 1.5625vh;
+}
+
+.rank_wrap .left {
+    left: 0;
+}
+
+.rank_wrap .right {
+    right: 0;
+}
+
+.rank_text {
+    color: #207D60;
+    margin: 7.0313vh 0 2.3438vh 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ranks {
+    text-align: left;
+    left: 50%;
+    margin: 0 auto;
+    width: 24.3333vw;
+    font-size: 1.6rem;
+}
+
+.rank {
+    color: #207D60;
+    margin: 0.4688vh 0;
+    font-size: 1.6rem;
+}
+
+.rank strong {
+    margin-right: 1.5625vh;
+}
+
+.share {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #207D60;
+    margin-top: 4.6875vh;
+}
+
+.logo_wrap {
+    display: flex;
+    width: 43.3333vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logoBtn {
+    width: 10vw;
+    height: 10vw;
+    padding: 0;
+    border: none;
+    background-color: #207D60;
+    border-radius: 50vw;
+}
+
+.insta {
+    display: flex;
+}
+
+.facebookLogo {
+    width: 7.7778vw;
+    height: 8.64vw;
+    margin-top: 1.0938vh;
+}
+
+.twitterLogo {
+    width: 6.9444vw;
+    height: 6.9444vw;
+    margin-top: 0.9375vh;
+}
+
+.instagramLogo {
+    width: 6.6667vw;
+    height: 6.6667vw;
+    transform: translateY(23%);
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 8.5938vh;
+}
+
+.besider {
+    margin-bottom: 3.125vh;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #207D60;
+}
+
+.footer_box {
+    position: relative;
+    bottom: 0;
+    height: 4.8438vh;
+    width: 100%;
+    background-color: #207D60;
+}
+
+@media screen and (max-width:359px) {
+    html, body {
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:319px) {
+    html, body {
+        font-size: 50%;
+    }
+}

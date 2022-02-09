@@ -1,0 +1,346 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    font-family: 'Noto Sans KR';
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background: no-repeat url('image/schoolBackgound.png') center/cover;
+    text-align: center;
+}
+
+.layer {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+}
+
+.ma_meme {
+    width: 19.7222vw;
+    height: 12.0313vh;
+    /* height: 18%;
+    width: 21.65%; */
+    display: inline-block;
+    margin-right: 4.1667vw;
+}
+
+.commet {
+    margin: 7.9688vh 0 3.125vh 0px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #207D60;
+}
+
+.guide {
+    display: flex;
+    width: 91.1111vw;
+    margin: 0 auto;
+}
+
+.sayBoxContainer {
+    display: inline-block;
+    width: 67.2222vw;
+    height: 14.0625vh;
+    position: relative;
+}
+
+.sayTri {
+    width: 0px;
+    height: 0px;
+    border-top: 4.6875vh solid #207D60;
+    border-bottom: 4.6875vh solid transparent;
+    border-right: 0px solid #207D60;
+    border-left: 13.8889vw solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sayBox {
+    background-color: #207D60;
+    display: inline-block;
+    width: 58.0556vw;
+    height: 14.0625vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 9.0278vw;
+    text-align: left;
+    line-height: 17px;
+    padding: 0.9375vh 0px 0px 4.1667vw;
+}
+
+.sayBox_text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.warning {
+    width: 100%;
+    height: 33.75vh;
+    background-color: #2B2823;
+    margin: 2.9688vw 0 4.375vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.warning_text {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.warning_meme {
+    width: 52.5vw;
+    height: 15vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #207D60;
+}
+
+form {
+    margin-top: 2.0938vh;
+    position: relative;
+}
+
+input {
+    width: 52.2222vw;
+    height: 4.6875vh;
+    border: 1px solid #207D60;
+    border-radius: 35vw;
+    background-color: transparent;
+    text-align: center;
+}
+
+input::placeholder {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #207D60;
+    padding-right: 7.1389vw;
+}
+
+input:focus {
+    outline:none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.submitBtn {
+    width: 10.86vw;
+    height: 3.125vh;
+    position: absolute;
+    right:25.1111vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #207D60;
+    color: white;
+    border: none;
+    border-radius: 35vw;
+    font-size: 1.2rem;
+}
+
+.besider {
+    margin: 0px 0px 3.1250vh 0px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #207D60;
+}
+
+.footer {
+    margin-top: 4.8438vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer_box {
+    position: relative;
+    bottom: 0;
+    height: 4.8438vh;
+    width: 100%;
+    background-color: #207D60;
+}
+
+@media screen and (max-width:359px) {
+    html, body {
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:319px) {
+    html, body {
+        font-size: 52%;
+    }
+}
+
+/* px단위 버전 */
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    font-family: 'Noto Sans KR';
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: no-repeat url('image/schoolBackgound.png') center/cover;
+    text-align: center;
+}
+
+.layer {
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+}
+
+.ma_meme {
+    height: 18%;
+    width: 21.65%;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.commet {
+    margin: 51px 0 20px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #207D60;
+}
+
+.guide {
+    display: flex;
+    width: 328px;
+    margin: 0 auto;
+}
+
+.sayBoxContainer {
+    display: inline-block;
+    width: 242px;
+    height: 90px;
+    position: relative;
+}
+
+.sayTri {
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid #207D60;
+    border-bottom: 30px solid transparent;
+    border-right: 0px solid #207D60;
+    border-left: 50px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sayBox {
+    background-color: #207D60;
+    display: inline-block;
+    width: 209px;
+    height: 90px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 32.5px;
+    text-align: left;
+    line-height: 17px;
+    padding: 6px 0px 0px 15px;
+}
+
+.sayBox_text {
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+}
+
+.warning {
+    width: 100%;
+    height: 216px;
+    background-color: #2B2823;
+    padding-top: 15px;
+    margin: 19px 0 28px 0;
+}
+
+.warning_text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.warning_meme {
+    width: 189px;
+    height: 96px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #207D60;
+}
+
+form {
+    margin-top: 7px;
+}
+
+input {
+    width: 183px;
+    height: 30px;
+    border: 1px solid #207D60;
+    border-radius: 35px;
+    background-color: transparent;
+    text-align: center;
+}
+
+input::placeholder {
+    font-weight: bold;
+    font-size: 12px;
+    color: #207D60;
+}
+
+.besider {
+    margin: 0px 0px 20px 0px;
+    font-size: 8px;
+    font-weight: lighter;
+    color: #207D60;
+}
+
+.footer {
+    margin-top: 31px;
+    width: 100%;
+}
+
+.footer_box {
+    position: relative;
+    bottom: 0;
+    height: 31px;
+    width: 100%;
+    background-color: #207D60;
+} */

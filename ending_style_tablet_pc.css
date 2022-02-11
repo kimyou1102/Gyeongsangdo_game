@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0 auto;
+    width: 360px;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+.main {
+    background-color: #E48927;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment {
+    margin: 80px 0px 21px 0px;
+    font-family: 'SF_HambakSnow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
+
+.endingLogo {
+    width: 260px;
+    height: 221px;
+    display: block;
+    margin: 0 auto;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0px 0px 0px 17px;
+}
+
+button {
+    width: 188px;
+    height: 55px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}

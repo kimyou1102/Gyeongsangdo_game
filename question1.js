@@ -9,15 +9,12 @@ const stop_icon = document.querySelector('.stop_icon');
 const audio = document.querySelector('audio');
 const loading = document.querySelector('.loading');
 
-// MediaRecorder 변수 생성 
 let mediaRecorder = null; 
-// 녹음 데이터 저장 배열 
 const audioArray = []; 
 let second = 0;
+let timer;
 
 recordBtn.addEventListener('click', () => {
-    modal.style.display = 'block';
-    modalWrap.style.display = 'block';
     recordStart();
 });
 
@@ -25,14 +22,20 @@ stopBtn.addEventListener('click', stopBtnClick);
 
 modalWrap.addEventListener('click', (e) => {
     if(e.target === modalWrap) {
+        clearInterval(timer);
+        second = 0;
         modal.style.display = 'none';
         modalWrap.style.display = 'none';
         timeAndBtnNone();
-        // second = 0;
         loading.style.visibility = 'visible';
         stopBtn.classList.remove('recordEnd');
     }
 })
+
+function modalShow() {
+    modal.style.display = 'block';
+    modalWrap.style.display = 'block';
+}
 
 function timeAndBtnNone() {
     time.style.display = 'none'
@@ -43,9 +46,7 @@ function timeAndBtnNone() {
 
 function stopBtnClick(event) {
     let target = event.target;
-    console.log(stopBtn.classList.length);
     if(stopBtn.classList.length === 2) {
-        //녹음 끝 들어볼 수 있는, 재녹음 가능한 상태
         console.log('재녹음시작');
         timeAndBtnNone();
         recordStart();
@@ -69,7 +70,7 @@ function showBtn() {
     playBtn_icon.src = 'image/play_icon.png';
     playBtn.style.display = 'block';
     submitBtn.style.display = 'block';
-    stop_icon.src = 'image/mic_orange_icon.png'; //재녹음버튼
+    stop_icon.src = 'image/mic_orange_icon.png';
 }
 
 playBtn.addEventListener('click', (event) => {
@@ -86,33 +87,38 @@ playBtn.addEventListener('click', (event) => {
 
 submitBtn.addEventListener('click', () => {
     console.log("제출");
-    
 })
 
 async function recordStart(event) {
     console.log('녹음시작');
-    const mediaStream = await navigator.mediaDevices.getUserMedia({audio: true});
-    mediaRecorder = new MediaRecorder(mediaStream);
-    mediaRecorder.ondataavailable = (event) => { 
-        audioArray.push(event.data); 
-    }
+    try {
+        const mediaStream = await navigator.mediaDevices.getUserMedia({audio: true})
+        mediaRecorder = new MediaRecorder(mediaStream);
+        mediaRecorder.ondataavailable = (event) => { 
+            audioArray.push(event.data); 
+        }
+        mediaRecorder.onstop = (event) => {
+            const blob = new Blob(audioArray, {"type": "audio/ogg codecs=opus"}); 
+            audioArray.splice(0);
+            const blobURL = window.URL.createObjectURL(blob);
+            audio.src = blobURL;
+        }
+        mediaRecorder.start();
 
-    mediaRecorder.onstop = (event) => {
-        const blob = new Blob(audioArray, {"type": "audio/ogg codecs=opus"}); 
-        audioArray.splice(0);
-        const blobURL = window.URL.createObjectURL(blob);
-        audio.src = blobURL; 
-    }
+        timer = setInterval(() => {
+            console.log(second);
+            ++second;
+        },1000)
 
-    mediaRecorder.start(); 
-    x = setInterval(() => {
-        ++second;
-    },1000)
+        modalShow();
+    } catch(e) {
+        alert('마이크 권한이 승인되어있지 않습니다. 승인해주세요.');
+    }
 }
 
 function recordStop() {
-    mediaRecorder.stop(); 
-    clearInterval(x);
+    mediaRecorder.stop();
+    clearInterval(timer);
     console.log('second: ' + second);
     timeCal(second);
     second = 0;

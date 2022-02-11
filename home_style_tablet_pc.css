@@ -1,0 +1,263 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    font-family: 'Noto Sans KR';
+}
+
+html, body {
+    margin: 0;
+}
+
+.main {
+    height: 606px;
+    background: no-repeat url('image/schoolBackgound.png') center/cover;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 360px;
+}
+
+.layer {
+    height: 606px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+body * {
+    position: relative;
+} */
+
+.test_name {
+    display: inline-block;
+    margin-top: 43px;
+    margin-bottom: 11px;
+    color: #207D60;
+}
+
+.title_img {
+    width: 270px;
+    height: 124px;
+    margin: 0 auto;
+    margin-bottom: 41px;
+    display: block;
+}
+
+.meme_img {
+    display: block;
+    margin: 0 auto;
+    width: 268px;
+    height: 150px;
+    margin-bottom: 52px;
+}
+
+.startBtn {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E48927;
+    width: 240px;
+    height: 70px;
+    border: 1px solid #E48927;
+    box-sizing: border-box;
+    border-radius: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.infoText {
+    margin: 21px 0 0px 0;
+    padding-bottom: 44px;
+    color: #E48927;
+    display: block;
+}
+
+.infoText .total, .infoText .survivor {
+    color: #E48927;
+    font-weight: bold;
+}
+
+.addInfo {
+    width: 100%;
+    bottom: 0;
+}
+
+.names_title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.names_title::before {
+    content: "";
+    flex-grow: 1;
+    margin-right: 5px;
+    background-color: #FEBE04;
+    height: 1px;
+}
+
+.names_title::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 5px;
+    background-color: #FEBE04;
+    height: 1px;
+}
+
+.namesDecoration {
+    width: 60px;
+    height: 71px;
+    /* position: absolute; */
+    /* top: 10px; */
+}
+
+.names_text {
+    color: #207D60;
+    margin: 0 11px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 54px;
+    line-height: 54px;
+}
+
+.names_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 319px;
+    margin: 0 auto;
+    height: 215px;
+    margin-top: 21px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0px 13px;
+    overflow: auto;
+}
+
+.names_content::-webkit-scrollbar {
+  width: 10px;
+}
+.names_content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.names_content::-webkit-scrollbar-track {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.name {
+    display: inline-block;
+    border-radius: 35px;
+    color: white;
+    background-color: #207D60;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin: 7px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #FEBE04;
+    margin-top: 23px;
+}
+
+.share {
+    font-weight: bold;
+    font-size: 20px;
+    color: #207D60;
+    margin-top: 30px;
+}
+
+.logo_wrap {
+    display: flex;
+    width: 156px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logoBtn {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.logoBtn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: #207D60;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.insta {
+    padding-top: 4px;
+    padding-left: 2px;
+}
+
+.twitterLogo {
+    width: 25px;
+    height: 26px;
+    margin-top: 6px;
+}
+
+.facebookLogo {
+    width: 28px;
+    height: 31px;
+    margin-top: 7px;
+}
+
+.instagramLogo {
+    width: 24px;
+    height: 24px;
+}
+
+.besider {
+    margin: 0px 0px 20px 0px;
+    font-size: 8px;
+    font-weight: lighter;
+    color: #207D60;
+}
+
+.footer {
+    margin-top: 55px;
+}
+
+.footer_box {
+    position: relative;
+    bottom: 0;
+    height: 31px;
+    width: 100%;
+    background-color: #207D60;
+}

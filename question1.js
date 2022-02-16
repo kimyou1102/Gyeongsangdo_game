@@ -102,6 +102,8 @@ async function recordStart(event) {
             audioArray.splice(0);
             const blobURL = window.URL.createObjectURL(blob);
             audio.src = blobURL;
+            // const audioTime = getBlobDuration(blob);
+            // console.log(audioTime + ' seconds');
         }
         mediaRecorder.start();
 

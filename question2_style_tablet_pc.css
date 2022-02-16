@@ -201,6 +201,18 @@ li:nth-child(5) {
     animation: fadeIn 0.5s ease-in-out;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 .time {
     display: block;
     margin: 127px 0 13px 0;
